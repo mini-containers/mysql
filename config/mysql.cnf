@@ -1,0 +1,29 @@
+# == customization
+
+[mysqld]
+
+# listen on all interfaces and default port
+bind-address=0.0.0.0
+port=3306
+
+# data directories
+datadir=/data
+innodb_data_home_dir=/data
+innodb_log_group_home_dir=/data
+
+# TODO: figure out logging to stdout/stderr
+# log to defined files
+general-log-file=/data/mysql.log
+log-error=/data/mysql-error.log
+slow-query-log-file=/data/mysql-slow.log
+
+# fixed PID file
+pid_file=/data/mysql.pid
+
+# enforce UTF-8 encoding
+character_set_server=utf8
+character_set_filesystem=utf8
+collation-server=utf8_general_ci
+init-connect='SET NAMES utf8'
+init_connect='SET collation_connection = utf8_general_ci'
+skip-character-set-client-handshake
