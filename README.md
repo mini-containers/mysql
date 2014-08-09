@@ -47,6 +47,10 @@ docker run -v /mydata/mysql:/data -d -p 3306:3306 mini/mysql
 We recommend you mount the volume to avoid loosing data between updates to this
 container.
 
+## Sponsor
+
+Work on this was made possible thanks to [AREA 17](http://www.area17.com).
+
 ## License
 
 All the code contained in this repository, unless explicitly stated, is
