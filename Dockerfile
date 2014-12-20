@@ -1,7 +1,7 @@
 FROM       mini/base
 MAINTAINER Luis Lavena <luislavena@gmail.com>
 
-ENV MYSQL_VERSION 5.5.38-r0
+ENV MYSQL_VERSION 5.5.40-r1
 
 RUN apk-install mysql=$MYSQL_VERSION mysql-client=$MYSQL_VERSION pwgen
 
